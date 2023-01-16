@@ -3,6 +3,8 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
+use App\Http\Controllers\api\v1\HelloController;
+
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -18,6 +20,5 @@ use Illuminate\Support\Facades\Route;
 //     return $request->user();
 // });
 
-Route::get('/', function () {
-    return 'Hello World';
-});
+Route::apiResource('message', HelloController::class);
+
