@@ -4,6 +4,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\api\v1\HelloController;
+use App\Http\Controllers\api\v1\TaskController;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,4 +22,5 @@ use App\Http\Controllers\api\v1\HelloController;
 // });
 
 Route::apiResource('message', HelloController::class);
+Route::apiResource('tasks', TaskController::class);
 
